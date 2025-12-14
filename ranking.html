@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <nav>
+            <div id="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+            <ul>
+                <li id="inicio"> <a href="index.html">Inicio</a></li>
+
+                <li id="ranking"> <a href="ranking.html">Ranking</a></li>
+
+                <li id="categorias"> <a href="categorias.html">Categorías</a></li>
+
+                <li id="eventos"> <a href="eventos.html">Eventos</a></li>
+
+                <li id="contactos"> <a href="contactos.html">Contactos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main-->
+    <main>
+        <section id="ranking">
+            <h1 id="titR" style="margin-top:10%;">Ranking de Videojuegos</h1>
+            <h2 id="subtR">Top Juegos Populares</h2>
+            <div class="ranking-list">
+                <!-- Juego 1 -->
+                <article class="game-card">
+                    <h3>Minecraft</h3>
+                    <img src="img/minecraft.webp" alt="Minecraft" class="im-rank">
+                    <div class="g-info">
+                        <p class="genre">Sandbox,<br> Aventura</p>
+                        <div class="stars">★★★★★</div>
+                        <button class="toggle-details">Mostrar detalles</button>
+                    </div>
+                    <div class="g-details" hidden>
+                        <p><strong>Descripción:</strong> Minecraft es un videojuego de construcción de tipo «mundo
+                            abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson, que creó
+                            posteriormente Mojang Studios.​​</p>
+                        <p><strong>Plataformas:</strong> PC, PS5, Xbox Series</p>
+                    </div>
+                </article>
+
+                <!-- Juego 2 -->
+                <article class="game-card">
+                    <h3>Fortnite</h3>
+
+                    <img src="img/fortnite.webp" alt="Fortnite" class="im-rank">
+                    <div class="g-info">
+                        <p class="genre">Battle Royale</p>
+                        <div class="stars">★★★★★</div>
+                        <button class="toggle-details">Mostrar detalles</button>
+                    </div>
+                    <div class="g-details" hidden>
+                        <p><strong>Descripción:</strong> Fortnite Battle Royale es un videojuego multiplataforma
+                            gratuito perteneciente al género battle royale desarrollado y publicado por Epic Games.
+                        </p>
+                        <p><strong>Plataformas:</strong> Switch, PC, PS4, PS5</p>
+                    </div>
+                </article>
+
+                <!-- Juego 3 -->
+                <article class="game-card">
+                    <h3>League of Legends</h3>
+
+                    <img src="img/lol.webp" alt="League of Legends" class="im-rank">
+                    <div class="g-info">
+                        <p class="genre">MOBA</p>
+                        <div class="stars">★★★★★</div>
+                        <button class="toggle-details">Mostrar detalles</button>
+                    </div>
+                    <div class="g-details" hidden>
+                        <p><strong>Descripción:</strong> League of Legends es un videojuego multijugador de arena de
+                            batalla en línea desarrollado y publicado por Riot Games.</p>
+                        <p><strong>Plataformas:</strong> PC, Mobile</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><img src="img/icons8-facebook-40.png" alt="facebook" style="height: 20px;">Facebook</a>
+            <a href="https://twitter.com" target="_blank"><img src="img/icons8-twitter-48.png" alt="twitter" style="height: 20px;">Twitter</a>
+            <a href="https://instagram.com" target="_blank"><img src="img/icons8-instagram-48.png" alt="instagram" style="height: 20px;">Instagram</a>
+        </div>
+        <p class="copyright">© 2025 VideoGames. Todos los derechos reservados.</p>
+
+        <div class="footer-links">
+            <p><a href="contactos.html">Contacto</a> | <a href="https://es.wikipedia.org/wiki/T%C3%A9rminos_y_condiciones_de_uso">Términos de uso</a></p>
+        </div>
+
+    </footer>
+    <script>
+        $(document).ready(function () {
+           $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
+                    $("nav").addClass("scrolled");
+                } else {
+                    $("nav").removeClass("scrolled");
+                }
+            }); 
+            $(".toggle-details").click(function () {
+                const details = $(this).closest(".game-card").find(".g-details");
+                details.slideToggle();
+
+                if ($(this).text() === "Mostrar detalles") {
+                    $(this).text("Ocultar detalles");
+                } else {
+                    $(this).text("Mostrar detalles");
+                }
+            });
+            
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

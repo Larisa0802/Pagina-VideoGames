@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoGames</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <div id="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+            <ul>
+                <li id="inicio"> <a href="index.html">Inicio</a></li>
+
+                <li id="ranking"> <a href="ranking.html">Ranking</a></li>
+
+                <li id="categorias"> <a href="categorias.html">Categorías</a></li>
+
+                <li id="eventos"> <a href="eventos.html">Eventos</a></li>
+
+                <li id="contactos"> <a href="contactos.html">Contactos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="titR">¡Bienvenido a VideoGames!</h1>
+    <h2 id="subtR">Vota tus favoritos en el ranking, compite con otros jugadores en eventos y escribe tu propia leyenda
+    </h2>
+
+    <!-- CARRUSEL -->
+    <main class="carousel">
+
+        <!-- CONTENEDOR DE SLIDES -->
+        <div class="carousel-track">
+            <div class="carousel-slide" id="1">
+                <h2 id="tituloslider">Marvel Spiderman</h2>
+                <img src="img/spidermanfondo.jpg" alt="Slide 1">
+            </div>
+
+            <div class="carousel-slide">
+                <h2 id="tituloslider">Fortnite</h2>
+
+                <img src="img/fortnite.webp" alt="Slide 2">
+            </div>
+
+            <div class="carousel-slide">
+                <h2 id="tituloslider">God Of War - Ragnarök</h2>
+
+                <img src="img/gowragnarokfondo.jpg" alt="Slide 3">
+            </div>
+
+            <div class="carousel-slide">
+                <h2 id="tituloslider">Horizon Zero Dawn</h2>
+
+                <img src="img/hzdfondo.jpg" alt="Slide 4">
+            </div>
+
+            <div class="carousel-slide">
+                <h2 id="tituloslider">The Legend of Zelda</h2>
+
+                <img src="img/tlozfondo.jpg" alt="Slide 5">
+            </div>
+
+            <div class="carousel-slide">
+                <h2 id="tituloslider">League of Legends</h2>
+
+                <img src="img/lol.jpg" alt="Slide 6">
+            </div>
+
+            <div class="carousel-slide">
+                <h2 id="tituloslider">Super Mario Bros</h2>
+
+                <img src="img/mariobrosfondopng.png" alt="Slide 7">
+            </div>
+
+            <div class="carousel-slide">
+                <h2 id="tituloslider">Minecraft</h2>
+
+                <img src="img/minecraftfondo.jpg" alt="Slide 8">
+            </div>
+
+        </div>
+
+        <!-- Botones -->
+        <button class="carousel-btn prev">‹</button>
+        <button class="carousel-btn next">›</button>
+
+    </main>
+
+    <div class="desarrolladoras">
+        <div class="perfiles">
+            <h2 class="enunciado_perfiles">Desarrolladoras de la web: </h2>
+            <div class="perfilesSinEnunciado">
+                <!-- Perfil 1 -->
+                <div class="perfil" style="display: block;">
+                    <img src="img/perfil-avatar-mujer-verde.avif" alt="Larisa">
+                    <h2>Larisa Mancebo Morfe</h2>
+                </div>
+                <!-- Perfil 2 -->
+                <div class="perfil" style="display: block;">
+                    <img src="img/perfil-avatar-rosa.avif" alt="Alba">
+                    <h2>Alba Rojas Espejo</h2>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <h2>🎯Nuestros perfiles</h2>
+            <ul>
+                <li><a href="https://github.com/iNakky" target="_blank">👉🏻GITHUB ALBA👈🏻</a></li>
+                <li><a href="https://www.linkedin.com/in/alba-rojas-0575a3298/" target="_blank">👉🏻LINKEDIN
+                        ALBA👈🏻</a></li>
+                <li><a href="https://github.com/Larisa0802" target="_blank">👉🏻GITHUB LARISA👈🏻</a></li>
+                <li><a href="https://www.linkedin.com/in/larisa-mancebo-morfe-058997246/" target="_blank">👉🏻LINKEDIN
+                        LARISA👈🏻</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    </section>
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><img src="img/icons8-facebook-40.png" alt="facebook"
+                    style="height: 20px;">Facebook</a>
+            <a href="https://twitter.com" target="_blank"><img src="img/icons8-twitter-48.png" alt="twitter"
+                    style="height: 20px;">Twitter</a>
+            <a href="https://instagram.com" target="_blank"><img src="img/icons8-instagram-48.png" alt="instagram"
+                    style="height: 20px;">Instagram</a>
+        </div>
+        <p class="copyright">© 2025 VideoGames. Todos los derechos reservados.</p>
+
+        <div class="footer-links">
+            <p><a href="contactos.html">Contacto</a> | <a
+                    href="https://es.wikipedia.org/wiki/T%C3%A9rminos_y_condiciones_de_uso">Términos de uso</a></p>
+        </div>
+
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
+                    $("nav").addClass("scrolled");
+                } else {
+                    $("nav").removeClass("scrolled");
+                }
+            });
+        })
+
+        const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const nextBtn = document.querySelector('.next');
+        const prevBtn = document.querySelector('.prev');
+
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateCarousel();
+        });
+    </script>
+</body>
+
+</html>

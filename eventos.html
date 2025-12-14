@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+   <!--Header-->
+    <header>
+        <nav>
+            <div id="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+            <ul>
+                <li id="inicio"> <a href="index.html">Inicio</a></li>
+
+                <li id="ranking"> <a href="ranking.html">Ranking</a></li>
+
+                <li id="categorias"> <a href="categorias.html">Categorías</a></li>
+
+                <li id="eventos"> <a href="eventos.html">Eventos</a></li>
+
+                <li id="contactos"> <a href="contactos.html">Contactos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="eventos">
+        <h1 id="titR">Eventos de este mes!</h1>
+        <h2 id="subtR">Pulse -> ✅ para apuntarse!</h2>
+
+        <div class="calendario-container">
+            <table class="calendario">
+                <thead>
+                    <tr>
+                        <th colspan="7" class="mes_calendario">Diciembre 2025</th>
+                    </tr>
+
+                    <tr>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                        <th>Sábado</th>
+                        <th>Domingo</th>
+                    </tr>
+                </thead>
+
+                <!--Semanas: -->
+
+                <tbody>
+                    <!--1a semana-->
+                    <tr>
+                        <td class="dia">
+                            <div class="diaHeader">
+                                <span class="numDia">1</span>
+                                <button class="botonApuntarse">✅</button>
+                            </div>
+                            <div class="dia-evento">
+                                <span class="estado"></span>
+                               <p>Animal Crossing: Toy Day</p>
+                            </div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">2</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">3</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">4</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">5</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="diaHeader">
+                                <span class="numDia">6</span>
+                                <button class="botonApuntarse">✅</button>
+                            </div>
+                            <div class="dia-evento">
+                                <span class="estado"></span>
+                               <p>Fortnite Winterfest</p>
+                            </div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="diaHeader">
+                                <span class="numDia">7</span>
+                                <button class="botonApuntarse">✅</button>
+                            </div>
+                            <div class="dia-evento">
+                                <span class="estado"></span>
+                               <p>Minecraft Christmas Event</p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                        <td class="dia">
+                            <div class="diaHeader">
+                                <span class="numDia">8</span>
+                                <button class="botonApuntarse">✅</button>
+                            </div>
+                            <div class="dia-evento">
+                                <span class="estado"></span>
+                               <p>Overwatch Winter Wonderland</p>
+                            </div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">9</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">10</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">11</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">12</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">13</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">14</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">15</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">16</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">17</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">18</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">19</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="diaHeader">
+                                <span class="numDia">20</span>
+                                <button class="botonApuntarse">✅</button>
+                            </div>
+                            <div class="dia-evento">
+                                <span class="estado"></span>
+                               <p>GTA Online Holiday Surprise</p>
+                            </div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="diaHeader">
+                                <span class="numDia">21</span>
+                                <button class="botonApuntarse">✅</button>
+                            </div>
+                            <div class="dia-evento">
+                                <span class="estado"></span>
+                               <p>Destiny 2 The Dawning</p>
+                            </div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">22</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="diaHeader">
+                                <span class="numDia">23</span>
+                                <button class="botonApuntarse">✅</button>
+                            </div>
+                            <div class="dia-evento">
+                                <span class="estado"></span>
+                               <p>Pokémon Scarlet & Violet Christmas Raid</p>
+                            </div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="diaHeader">
+                                <span class="numDia">24</span>
+                                <button class="botonApuntarse">✅</button>
+                            </div>
+                            <div class="dia-evento">
+                                <span class="estado"></span>
+                               <p>League of Legends Snowdown</p>
+                            </div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">25</span>
+                            </div>
+                            <div class="dia-sin-evento">
+                                <p>🎄 Navidad 🎄</p>
+                            </div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">26</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">27</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">28</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">29</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="diaHeader">
+                                <span class="numDia">30</span>
+                                <button class="botonApuntarse">✅</button>
+                            </div>
+                            <div class="dia-evento">
+                                <span class="estado"></span>
+                               <p>Final Fantasy XIV Starlight Celebration</p>
+                            </div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia">31</span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia"></span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia"></span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia"></span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                        <td class="dia">
+                            <div class="dia-header">
+                            <span class="numero-dia"></span>
+                            </div>
+                            <div class="dia-sin-evento"></div>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><img src="img/icons8-facebook-40.png" alt="facebook" style="height: 20px;">Facebook</a>
+            <a href="https://twitter.com" target="_blank"><img src="img/icons8-twitter-48.png" alt="twitter" style="height: 20px;">Twitter</a>
+            <a href="https://instagram.com" target="_blank"><img src="img/icons8-instagram-48.png" alt="instagram" style="height: 20px;">Instagram</a>
+        </div>
+        <p class="copyright">© 2025 VideoGames. Todos los derechos reservados.</p>
+
+        <div class="footer-links">
+            <p><a href="contactos.html">Contacto</a> | <a href="https://es.wikipedia.org/wiki/T%C3%A9rminos_y_condiciones_de_uso">Términos de uso</a></p>
+        </div>
+
+    </footer>
+<script>
+      $(document).ready(function () {
+           $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
+                    $("nav").addClass("scrolled");
+                } else {
+                    $("nav").removeClass("scrolled");
+                }
+            }); 
+        })
+
+        $(".botonApuntarse").click(function(){
+            let boton = $(this);
+            let celda = boton.closest("td");
+            let estado = celda.find(".estado");
+            //alerta de apuntado
+            alert("Te has apuntado a este evento!👍🏼")
+
+            //cambia el fondo
+            celda.css({
+                "background" : "linear-gradient(to right, #7a5fc3, #0aadcafc)",
+                "color" : "black"
+
+            })
+
+            //texto de apuntado
+            estado.text("✨Apuntado!✨")
+        })
+
+</script>
+</body>
+</html>

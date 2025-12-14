@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <nav>
+            <div id="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+            <ul>
+                <li id="inicio"> <a href="index.html">Inicio</a></li>
+
+                <li id="ranking"> <a href="ranking.html">Ranking</a></li>
+
+                <li id="categorias"> <a href="categorias.html">Categorías</a></li>
+
+                <li id="eventos"> <a href="eventos.html">Eventos</a></li>
+
+                <li id="contactos"> <a href="contactos.html">Contactos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="titR" style="margin-top:7%;">¡Contactanos!</h1>
+        <section class="contactos">
+            <form>
+                <label for="nombre">Nombre<span></label><input id="nombre" type="text" placeholder="Nombre" required><br><br>
+                <label for="email">Email</label><input id="email" type="text" placeholder="Email" required><br><br>
+                <label for="nombre">Sugerencia o duda</label> <br><br>
+                <textarea placeholder="¡Escribe aqui tus dudas o sugerencias!" required></textarea><br><br>
+                <button type="submit" name="enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+   <footer>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><img src="img/icons8-facebook-40.png" alt="facebook" style="height: 20px;">Facebook</a>
+            <a href="https://twitter.com" target="_blank"><img src="img/icons8-twitter-48.png" alt="twitter" style="height: 20px;">Twitter</a>
+            <a href="https://instagram.com" target="_blank"><img src="img/icons8-instagram-48.png" alt="instagram" style="height: 20px;">Instagram</a>
+        </div>
+        <p class="copyright">© 2025 VideoGames. Todos los derechos reservados.</p>
+
+        <div class="footer-links">
+            <p><a href="contactos.html">Contacto</a> | <a href="https://es.wikipedia.org/wiki/T%C3%A9rminos_y_condiciones_de_uso">Términos de uso</a></p>
+        </div>
+
+    </footer>
+<script>
+      $(document).ready(function () {
+           $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
+                    $("nav").addClass("scrolled");
+                } else {
+                    $("nav").removeClass("scrolled");
+                }
+            }); 
+        })
+</script>
+</body>
+
+</html>
