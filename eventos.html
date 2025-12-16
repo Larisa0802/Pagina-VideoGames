@@ -387,6 +387,18 @@
             let boton = $(this);
             let celda = boton.closest("td");
             let estado = celda.find(".estado");
+
+            if(boton.hasClass('apuntado')){
+                alert("Te has desapuntado de este evento")
+
+                celda.css({
+                    "background" : "",
+                    "color" : ""
+                });
+
+                estado.text("");
+                boton.removeClass('apuntado');
+            }else{
             //alerta de apuntado
             alert("Te has apuntado a este evento!👍🏼")
 
@@ -398,8 +410,10 @@
             })
 
             //texto de apuntado
-            estado.text("✨Apuntado!✨")
-        })
+            estado.text("✨Apuntado!✨");
+            boton.addClass('apuntado');
+        }
+    })
 
 </script>
 </body>

@@ -272,6 +272,19 @@
 
         $(".deseados").click(function(){
             let boton = $(this);
+
+            if(boton.hasClass('añadido')){
+                boton.text('Añadir a Deseados✨');
+                boton.css({
+                    "background-color" : "",
+                    "color" : ""
+                });
+                boton.removeClass('añadido');
+
+                let titulo = boton.siblings("h3").text();
+                alert("Has eliminado: " + titulo);
+            
+        }else{
             //cambiar a añadido
             boton.text('Añadido a Deseados ✨');
 
@@ -281,12 +294,12 @@
                 "color": "grey"
             });
 
-            //desactivado
-            boton.prop("disabled", true);
+            boton.addClass("añadido");
 
             //mensaje emergente
             let titulo = boton.siblings("h3").text();
             alert("Has añadido: " + titulo);
+            }
         });
     </script>
 </body>
